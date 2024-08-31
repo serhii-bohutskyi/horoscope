@@ -1,0 +1,13 @@
+<div class="zodiac-signs-container">
+  <div class="zodiac-signs-row" *ngFor="let row of zodiacSigns | slice:0:4; let i = index">
+    <div
+      *ngFor="let sign of zodiacSigns.slice(i * 4, (i + 1) * 4)"
+      class="zodiac-sign"
+      [class.active]="selectedSign === sign"
+      (click)="selectSign(sign)"
+    >
+      <img [src]="'/assets/images/' + sign + '.png'"/>
+      <p>{{ 'ZODIAC_SIGNS.' + sign.toUpperCase() | translate }}</p>
+    </div>
+  </div>
+</div>

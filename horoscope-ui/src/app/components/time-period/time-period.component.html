@@ -1,0 +1,21 @@
+<div class="time-period-container">
+  <button
+    *ngFor="let period of timePeriods"
+    [class.active]="selectedPeriod === period"
+    (click)="selectPeriod(period)"
+  >
+    <span class="material-icons">
+      {{
+        period === 'daily' ? 'today' :
+          period === 'weekly' ? 'date_range' :
+            period === 'monthly' ? 'calendar_view_month' :
+              'event'
+      }}
+    </span>
+    <p>{{ 'TIME_PERIODS.' + period.toUpperCase() | translate }}</p>
+  </button>
+</div>
+
+<div class="current-date">
+  {{ currentDate }}
+</div>

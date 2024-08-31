@@ -1,0 +1,49 @@
+.time-period-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.time-period-container button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.time-period-container .material-icons {
+  font-size: 36px; /* Adjust icon size */
+  color: #3f51b5; /* Icon color */
+  margin-bottom: 5px; /* Space between icon and text */
+}
+
+.time-period-container p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.time-period-container button:hover {
+  transform: translateY(-5px);
+}
+
+.time-period-container button.active {
+  font-weight: bold;
+  color: #3f51b5; /* Highlight color for active button */
+  border-bottom: 2px solid #3f51b5; /* Add a bottom border to active buttons */
+}
+
+.current-date {
+  font-size: 22px; /* Bigger font size */
+  font-family: 'Cinzel Decorative', serif; /* Font style similar to zodiac signs */
+  text-align: center;
+  margin-top: 20px; /* Space above the date */
+  color: #333; /* Date color */
+}

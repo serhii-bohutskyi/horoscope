@@ -1,0 +1,9 @@
+<div class="modal-backdrop" (click)="close()"></div>
+<div class="modal">
+  <div class="modal-content">
+    <ng-content></ng-content>
+    <button class="close-button" (click)="close()">
+      {{ 'COMMON.CLOSE' | translate }}
+    </button>
+  </div>
+</div>

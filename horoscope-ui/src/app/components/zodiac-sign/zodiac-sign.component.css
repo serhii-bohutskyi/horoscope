@@ -1,0 +1,69 @@
+.zodiac-signs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center each row container */
+  gap: 20px; /* Space between rows */
+  padding: 20px;
+}
+
+.zodiac-signs-row {
+  display: flex;
+  justify-content: center; /* Center the items within the row */
+  gap: 20px; /* Fixed space between items */
+  width: 100%; /* Ensure the row takes up the full container width */
+  max-width: 620px; /* Limit the row width to fit 4 items (adjust based on .zodiac-sign width and gap) */
+}
+
+.zodiac-sign {
+  flex: 0 1 120px; /* Fixed width for each zodiac sign */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.zodiac-sign img {
+  width: 100px; /* Adjust the size of the images as needed */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.zodiac-sign p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.zodiac-sign:hover {
+  transform: translateY(-5px);
+}
+
+.zodiac-sign.active {
+  border: 4px solid #3f51b5; /* Blue border for active state */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .zodiac-sign {
+    flex: 0 1 100px; /* Adjust width for smaller screens */
+  }
+
+  .zodiac-signs-row {
+    max-width: 520px; /* Adjust based on new width */
+  }
+}
+
+@media (max-width: 480px) {
+  .zodiac-sign {
+    flex: 0 1 80px; /* Adjust width for very small screens */
+  }
+
+  .zodiac-signs-row {
+    max-width: 420px; /* Adjust based on new width */
+  }
+}

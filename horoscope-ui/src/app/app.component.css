@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;1,300&display=swap');
+
+.font-plexmono {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.font-cinzel-serif {
+  font-family: 'Cinzel Decorative', serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url('/assets/images/background.png'); /* Path to your background image */
+  background-size: cover; /* Cover the entire header area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 100px; /* Adjust the height of the header */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between the title and the selector */
+  color: white; /* Text color for the header, adjust as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: add a text shadow for readability */
+  font-family: 'Cinzel Decorative', serif; /* Custom font for zodiac signs */
+  padding: 0 20px; /* Add padding for the header content */
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px; /* Adjust font size as needed */
+}
+
+.language-selector {
+  position: relative;
+}
+
+.language-selector select {
+  appearance: none;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-shadow: none; /* Remove text shadow for the select */
+  width: 120px; /* Set a wider width for the select element */
+}
+
+.language-selector select:hover {
+  background-color: rgba(255, 255, 255, 0.4); /* Slightly lighter on hover */
+}
+
+.language-selector::after {
+  content: '\25BC'; /* Down arrow icon */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: white;
+  font-size: 12px;
+}
+
+.language-selector select::-ms-expand {
+  display: none; /* Hide the default dropdown icon in IE */
+}
+
+main {
+  padding: 2rem;
+}

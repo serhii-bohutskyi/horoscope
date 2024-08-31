@@ -1,0 +1,23 @@
+<div [ngClass]="i18n.fontClass">
+  <div class="header-content">
+
+    <header>
+      <h1>{{ 'header.title' | translate }}</h1>
+      <div class="language-selector">
+
+        <select [value]="i18n.getCurrentLanguage()" (change)="switchLanguage($event)">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="ru">Русский</option>
+          <!-- Add more languages here -->
+        </select>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <app-time-period></app-time-period>
+    <app-zodiac-sign></app-zodiac-sign>
+    <app-horoscope-display></app-horoscope-display>
+  </main>
+</div>

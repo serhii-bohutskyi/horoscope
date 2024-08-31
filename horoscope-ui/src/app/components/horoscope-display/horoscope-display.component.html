@@ -1,0 +1,18 @@
+<app-modal *ngIf="showModal" (closeModal)="closeModal()">
+  <div *ngIf="loading" class="loading-spinner">
+    {{ 'COMMON.LOADING' | translate }}
+  </div>
+
+  <div *ngIf="!loading && horoscope && selectedSign && selectedPeriod">
+    <h2>
+      <span class="sign-name">{{ 'ZODIAC_SIGNS.' + selectedSign.toUpperCase() | translate }}</span>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <span class="period-name">{{ 'TIME_PERIODS.' + selectedPeriod.toUpperCase() | translate }}</span>
+    </h2>
+    <p>{{ horoscope }}</p>
+  </div>
+
+  <div *ngIf="error" class="error-message">
+    {{ error }}
+  </div>
+</app-modal>
