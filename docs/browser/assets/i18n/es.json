@@ -1,0 +1,35 @@
+{
+  "header": {
+    "title": "Horoscope"
+  },
+  "TIME_PERIODS": {
+    "DAILY": "Diario",
+    "WEEKLY": "Semanal",
+    "MONTHLY": "Mensual",
+    "YEARLY": "Anual"
+  },
+  "ZODIAC_SIGNS": {
+    "ARIES": "Aries",
+    "TAURUS": "Tauro",
+    "GEMINI": "Géminis",
+    "CANCER": "Cáncer",
+    "LEO": "Leo",
+    "VIRGO": "Virgo",
+    "LIBRA": "Libra",
+    "SCORPIO": "Escorpio",
+    "SAGITTARIUS": "Sagitario",
+    "CAPRICORN": "Capricornio",
+    "AQUARIUS": "Acuario",
+    "PISCES": "Piscis"
+  },
+  "COMMON": {
+    "LOADING": "Cargando...",
+    "CLOSE": "Cerrar"
+  },
+  "META": {
+    "TITLE": "Horóscopos Diarios y Semanales | Tu Guía del Zodiaco",
+    "DESCRIPTION": "Descubre tu horóscopo diario, semanal, mensual y anual para todos los signos del zodiaco. Obtén lecturas de horóscopo personalizadas y conocimientos adaptados a ti.",
+    "OG_TITLE": "Horóscopos Diarios y Semanales | Tu Guía del Zodiaco",
+    "OG_DESCRIPTION": "Descubre tu horóscopo diario, semanal, mensual y anual para todos los signos del zodiaco. Obtén lecturas de horóscopo personalizadas y conocimientos adaptados a ti."
+  }
+}
