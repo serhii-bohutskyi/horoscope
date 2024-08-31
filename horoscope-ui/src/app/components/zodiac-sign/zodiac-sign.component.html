@@ -6,7 +6,7 @@
       [class.active]="selectedSign === sign"
       (click)="selectSign(sign)"
     >
-      <img [src]="'/assets/images/' + sign + '.png'"/>
+      <img [src]="'assets/images/' + sign + '.png'"/>
       <p>{{ 'ZODIAC_SIGNS.' + sign.toUpperCase() | translate }}</p>
     </div>
   </div>
