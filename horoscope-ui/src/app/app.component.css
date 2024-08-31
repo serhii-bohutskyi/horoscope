@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  background-image: url('assets/images/background.png'); /* Path to your background image */
+  background-image: url('/assets/images/background.png'); /* Path to your background image */
   background-size: cover; /* Cover the entire header area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
